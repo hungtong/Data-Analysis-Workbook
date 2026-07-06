@@ -1,0 +1,53 @@
+---
+toc: true
+toc-depth: 3
+echo: true
+eval: true
+output: true
+format: 
+  html:
+    self-contained: false
+---
+
+```{python}
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+```
+
+# Bike Sharing Demand
+
+![From Magnific](https://github.com/hungtong/Notebook-Sources/blob/main/image/1_bikeshare.png?raw=true){fig-align="center" width="350"}
+
+Bike sharing systems provide an automated service that allows users to rent bicycles from one location and return them to another. These systems have become an important component of urban transportation because they offer an affordable, environmentally friendly, and convenient mode of travel. As a result, understanding the factors that influence bike usage is valuable to both service providers and users.
+
+From an operational perspective, accurate demand forecasting enables operators to allocate bicycles efficiently, optimize bike relocation, and improve customer satisfaction by ensuring that bicycles are available when and where they are needed. From a planning perspective, bike sharing data also provide insights into urban mobility patterns and how travel demand varies with time, weather conditions, and other environmental factors.
+
+Herein, we analyze the Bike Sharing Dataset from Capital Bikeshare in Washington, D.C., from January 1, 2011, through December 31, 2012. The data are aggregated at the hourly level and include the total number of bike rentals during each hour, together with weather and seasonal variables. Our primary objective is to explore how temporal and meteorological factors influence bike rental demand and to develop predictive models for hourly bike usage.
+
+The data set is available from https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset and contains the following variables:
+
+-   `instant` - Record index.
+-   `dteday` - Date of the observation.
+-   `season` - Season (`1` = winter, `2` = spring, `3` = summer, `4` = fall).
+-   `yr` - Year (`0` = 2011, `1` = 2012).
+-   `mnth` - Month (`1`--`12`).
+-   `hr` - Hour of the day (`0`--`23`).
+-   `holiday` - Indicates whether the day is a holiday (`1` = yes, `0` = no).
+-   `weekday` - Day of the week.
+-   `workingday` - Indicates whether the day is a working day (`1` = neither a weekend nor a holiday, `0` = otherwise).
+-   `weathersit` - Weather condition:
+    - `1` = Clear, few clouds, partly cloudy.
+    - `2` = Mist + cloudy, mist + broken clouds, mist + few clouds, mist.
+    - `3` = Light snow, light rain + thunderstorm + scattered clouds, light rain + scattered clouds.
+    - `4` = Heavy rain + ice pellets + thunderstorm + mist, snow + fog.
+-   `temp` - Normalized temperature in Celsius, computed as `(t - t_min) / (t_max - t_min)`, where `t_min = -8` and `t_max = 39`.
+-   `atemp` - Normalized feeling temperature in Celsius, computed as `(t - t_min) / (t_max - t_min)`, where `t_min = -16` and `t_max = 50`.
+-   `hum` - Normalized humidity (actual humidity divided by 100).
+-   `windspeed` - Normalized wind speed (actual wind speed divided by 67).
+-   `casual` - Number of rentals by casual (non-registered) users.
+-   `registered` - Number of rentals by registered users.
+-   `cnt` - Total number of bike rentals (`casual + registered`). This is the response variable in our analysis.
+
+## Data Set 

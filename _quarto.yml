@@ -1,0 +1,20 @@
+project:
+  type: book
+
+book:
+  title: "Data Analysis with Python"
+  author: "Hung Tong"
+  date: "July 2026"
+  chapters:
+    - index.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

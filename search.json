@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analysis with Python",
+    "section": "",
+    "text": "Preface\nThis text contains my data analyses with Python.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "1_bikesharing.html",
+    "href": "1_bikesharing.html",
+    "title": "1  Bike Sharing Demand",
+    "section": "",
+    "text": "1.1 Data Set",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bike Sharing Demand</span>"
+    ]
+  }
+]

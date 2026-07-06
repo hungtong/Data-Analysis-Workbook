@@ -7,8 +7,7 @@ book:
   date: "July 2026"
   chapters:
     - index.qmd
-
-bibliography: references.bib
+    - 1_bikesharing.qmd
 
 format:
   html:
